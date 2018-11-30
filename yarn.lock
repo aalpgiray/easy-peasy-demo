@@ -647,6 +647,26 @@
   resolved "https://registry.yarnpkg.com/@types/node/-/node-10.12.10.tgz#4fa76e6598b7de3f0cb6ec3abacc4f59e5b3a2ce"
   integrity sha512-8xZEYckCbUVgK8Eg7lf5Iy4COKJ5uXlnIOnePN0WUwSQggy9tolM+tDJf7wMOnT/JT/W9xDYIaYggt3mRV2O5w==
 
+"@types/prop-types@*":
+  version "15.5.6"
+  resolved "https://registry.yarnpkg.com/@types/prop-types/-/prop-types-15.5.6.tgz#9c03d3fed70a8d517c191b7734da2879b50ca26c"
+  integrity sha512-ZBFR7TROLVzCkswA3Fmqq+IIJt62/T7aY/Dmz+QkU7CaW2QFqAitCE8Ups7IzmGhcN1YWMBT4Qcoc07jU9hOJQ==
+
+"@types/react-dom@^16.0.11":
+  version "16.0.11"
+  resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-16.0.11.tgz#bd10ccb0d9260343f4b9a49d4f7a8330a5c1f081"
+  integrity sha512-x6zUx9/42B5Kl2Vl9HlopV8JF64wLpX3c+Pst9kc1HgzrsH+mkehe/zmHMQTplIrR48H2gpU7ZqurQolYu8XBA==
+  dependencies:
+    "@types/react" "*"
+
+"@types/react@*", "@types/react@^16.7.10":
+  version "16.7.10"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.7.10.tgz#a0ebd3af6632d6997506f6d1aac67fed8d0851b0"
+  integrity sha512-8EFSjCFLUA7JJQ6lJ9+9/99urIrdHACwH8GqPlYAPyIjxOkz2snkttOzItwUwXgqc2xg+r/IYW8M1J8WXax7xg==
+  dependencies:
+    "@types/prop-types" "*"
+    csstype "^2.2.0"
+
 "@types/semver@^5.5.0":
   version "5.5.0"
   resolved "https://registry.yarnpkg.com/@types/semver/-/semver-5.5.0.tgz#146c2a29ee7d3bae4bf2fcb274636e264c813c45"
@@ -1603,6 +1623,11 @@ csso@~2.3.1:
     clap "^1.0.9"
     source-map "^0.5.3"
 
+csstype@^2.2.0:
+  version "2.5.7"
+  resolved "https://registry.yarnpkg.com/csstype/-/csstype-2.5.7.tgz#bf9235d5872141eccfb2d16d82993c6b149179ff"
+  integrity sha512-Nt5VDyOTIIV4/nRFswoCKps1R5CD1hkiyjBE9/thNaNZILLEviVw9yWQw15+O+CpNjQKB/uvdcxFFOrSflY3Yw==
+
 date-now@^0.1.4:
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/date-now/-/date-now-0.1.4.tgz#eaf439fd4d4848ad74e5cc7dbef200672b9e345b"
@@ -1795,9 +1820,9 @@ duplexer2@~0.1.4:
   dependencies:
     readable-stream "^2.0.2"
 
-easy-peasy@christianchown/easy-peasy.git#typescript-typings:
+easy-peasy@christianchown/easy-peasy.git#0a09daca:
   version "1.6.1"
-  resolved "https://codeload.github.com/christianchown/easy-peasy/tar.gz/6db9d0067767739d3ac2e75c4b45aef53f3a7351"
+  resolved "https://codeload.github.com/christianchown/easy-peasy/tar.gz/0a09dacae996853f290528f9f1ede509bab3016c"
   dependencies:
     immer "^1.7.4"
     memoize-one "^4.0.3"
@@ -4820,15 +4845,20 @@ type-check@~0.3.2:
   dependencies:
     prelude-ls "~1.1.2"
 
+type-zoo@^3.2.1:
+  version "3.2.1"
+  resolved "https://registry.yarnpkg.com/type-zoo/-/type-zoo-3.2.1.tgz#67bc1abca3f4c54c143e7d93db2d4d568348e758"
+  integrity sha512-q5EZCfSB2VC0p8GIldsVOkayrIHezI+FSsKMmt7hFX9GeeTKN7cG3EdxscQQVA3ewQb8g3lMldNsLFQcgHCz5A==
+
 typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
-typescript@^3.2.1:
-  version "3.2.1"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.2.1.tgz#0b7a04b8cf3868188de914d9568bd030f0c56192"
-  integrity sha512-jw7P2z/h6aPT4AENXDGjcfHTu5CSqzsbZc6YlUIebTyBAq8XaKp78x7VcSh30xwSCcsu5irZkYZUSFP1MrAMbg==
+typescript@^3.3.0-dev.20181130:
+  version "3.3.0-dev.20181130"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.3.0-dev.20181130.tgz#cb2a06ec768d7dde0ab359cb243ef9363fa68fcc"
+  integrity sha512-18QC4WaZ15W2GcpjFAqXqt31Vugitc6QWHUjS7OiEBUYnfAtql2gWMs18Q5FX617QAfyTBpOp1KH8TQ/1Uem3Q==
 
 unicode-canonical-property-names-ecmascript@^1.0.4:
   version "1.0.4"

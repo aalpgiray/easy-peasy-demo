@@ -10,7 +10,7 @@ import {
   useAction,
 } from "easy-peasy";
 import { Action as ReduxAction } from "redux";
-interface ITodoValues {
+export interface ITodoValues {
   items: string[];
 }
 
@@ -18,13 +18,13 @@ interface ITodoValuesAndSelectors extends ITodoValues {
   lengthOfItems: number;
 }
 
-interface ITodoActions {
+export interface ITodoActions {
   saveTodo: Effect<IModel, string>;
   todoSaved: Action<ITodoValuesAndSelectors, string>;
   lengthOfItems: Select<ITodoValuesAndSelectors, number>;
 }
 
-interface IModel {
+export interface IModel {
   todos: ITodoValues & ITodoActions;
   counter: Reducer<number>;
 }

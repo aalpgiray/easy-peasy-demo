@@ -3,12 +3,16 @@
     "start": "parcel ./public/index.html"
   },
   "dependencies": {
-    "easy-peasy": "christianchown/easy-peasy.git#typescript-typings",
+    "easy-peasy": "christianchown/easy-peasy.git#0a09daca",
     "parcel-bundler": "^1.10.3",
     "react": "^16.7.0-alpha.2",
-    "react-dom": "^16.7.0-alpha.2"
+    "react-dom": "^16.7.0-alpha.2",
+    "redux": "^4.0.1",
+    "type-zoo": "^3.2.1"
   },
   "devDependencies": {
-    "typescript": "^3.2.1"
+    "@types/react": "^16.7.10",
+    "@types/react-dom": "^16.0.11",
+    "typescript": "^3.3.0-dev.20181130"
   }
 }

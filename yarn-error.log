@@ -1,8 +1,8 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add @types/easy-peasy
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add christianchown/easy-peasy/tree/typescript-typings
 
 PATH: 
-  C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Python27\;C:\Python27\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\PuTTY\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\cmder;C:\Program Files\nodejs\;C:\Program Files (x86)\MAVProxy;D:\CMake\bin;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Git\cmd;C:\Users\Aykut\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;C:\Users\Aykut\AppData\Roaming\npm;C:\Users\Aykut\AppData\Local\GitHubDesktop\bin;C:\Users\Aykut\.dotnet\tools;C:\Users\Aykut\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Aykut\AppData\Local\Yarn\bin
+  C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\ProgramData\Oracle\Java\javapath;C:\Python27\;C:\Python27\Scripts;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Microsoft SQL Server\Client SDK\ODBC\130\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\DTS\Binn\;C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\PuTTY\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\cmder;C:\Program Files\nodejs\;C:\Program Files (x86)\MAVProxy;D:\CMake\bin;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Git\cmd;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Users\Aykut\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Microsoft VS Code\bin;C:\Users\Aykut\AppData\Roaming\npm;C:\Users\Aykut\AppData\Local\GitHubDesktop\bin;C:\Users\Aykut\.dotnet\tools;C:\Users\Aykut\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Aykut\AppData\Local\Yarn\bin
 
 Yarn version: 
   1.12.3
@@ -14,8 +14,8 @@ Platform:
   win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@types%2feasy-peasy: Not found
-      at Request.params.callback [as _callback] (C:\Program Files (x86)\Yarn\lib\cli.js:65003:18)
+  Error: https://registry.yarnpkg.com/christianchown%2feasy-peasy/tree/typescript-typings: Request "https://registry.yarnpkg.com/christianchown%2feasy-peasy/tree/typescript-typings" returned a 405
+      at Request.params.callback [as _callback] (C:\Program Files (x86)\Yarn\lib\cli.js:65012:18)
       at Request.self.callback (C:\Program Files (x86)\Yarn\lib\cli.js:129018:22)
       at Request.emit (events.js:182:13)
       at Request.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:129990:10)
@@ -28,11 +28,17 @@ Trace:
 
 npm manifest: 
   {
+    "scripts": {
+      "start": "parcel ./public/index.html"
+    },
     "dependencies": {
-      "easy-peasy": "^1.6.1",
+      "easy-peasy": "christianchown/easy-peasy.git#typescript-typings",
       "parcel-bundler": "^1.10.3",
       "react": "^16.7.0-alpha.2",
       "react-dom": "^16.7.0-alpha.2"
+    },
+    "devDependencies": {
+      "typescript": "^3.3.0-dev.20181130"
     }
   }
 
@@ -1837,10 +1843,9 @@ Lockfile:
     dependencies:
       readable-stream "^2.0.2"
   
-  easy-peasy@^1.6.1:
+  easy-peasy@christianchown/easy-peasy.git#typescript-typings:
     version "1.6.1"
-    resolved "https://registry.yarnpkg.com/easy-peasy/-/easy-peasy-1.6.1.tgz#aa0cfc8bda3d9648b3ecfea303b9017a6bb3de6d"
-    integrity sha512-SCuOCYVsv07OHkJspVs1XhK3JgzSKWIS8TzFMPxIXKD/wxMFL6JsvlLHXEzmHwbDbB73/xj17htxldQdxG1btg==
+    resolved "https://codeload.github.com/christianchown/easy-peasy/tar.gz/6db9d0067767739d3ac2e75c4b45aef53f3a7351"
     dependencies:
       immer "^1.7.4"
       memoize-one "^4.0.3"
@@ -4867,6 +4872,11 @@ Lockfile:
     version "0.0.6"
     resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
     integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
+  
+  typescript@^3.3.0-dev.20181130:
+    version "3.3.0-dev.20181130"
+    resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.3.0-dev.20181130.tgz#cb2a06ec768d7dde0ab359cb243ef9363fa68fcc"
+    integrity sha512-18QC4WaZ15W2GcpjFAqXqt31Vugitc6QWHUjS7OiEBUYnfAtql2gWMs18Q5FX617QAfyTBpOp1KH8TQ/1Uem3Q==
   
   unicode-canonical-property-names-ecmascript@^1.0.4:
     version "1.0.4"
